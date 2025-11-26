@@ -1,0 +1,34 @@
+# Archivos/Carpetas del Sistema (Comunes)
+.DS_Store
+.vscode/
+
+# Dependencias (NO SUBIR)
+node_modules
+*/node_modules
+
+# Archivos de Entorno (¡SECRETO!)
+.env
+.env.testing
+*/.env
+*/.env.testing
+
+# BACKEND (Laravel)
+/backend/vendor
+/backend/storage/*.key
+/backend/public/hot
+/backend/public/storage
+/backend/bootstrap/cache/*.php
+
+# FRONTEND WEB (Next.js)
+/web/.next
+/web/out
+/web/node_modules
+/web/npm-debug.log*
+/web/yarn-error.log*
+
+# FRONTEND MOBILE (Expo/RN)
+/mobile/node_modules
+/mobile/.expo
+/mobile/web-build
+/mobile/android/build
+/mobile/ios/build
