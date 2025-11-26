@@ -1,34 +1,128 @@
-# Archivos/Carpetas del Sistema (Comunes)
+# ============================================
+# ARCHIVOS DEL SISTEMA OPERATIVO
+# ============================================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# ============================================
+# IDEs Y EDITORES
+# ============================================
 .vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.sublime-workspace
+*.sublime-project
 
-# Dependencias (NO SUBIR)
-node_modules
-*/node_modules
-
-# Archivos de Entorno (¡SECRETO!)
+# ============================================
+# ARCHIVOS DE ENTORNO (¡CREDENCIALES SENSIBLES!)
+# ============================================
 .env
+.env.local
+.env.development
+.env.test
 .env.testing
+.env.production
+.env.backup
 */.env
-*/.env.testing
+*/.env.*
 
-# BACKEND (Laravel)
-/backend/vendor
-/backend/storage/*.key
+# ============================================
+# DEPENDENCIAS (Node.js)
+# ============================================
+node_modules/
+*/node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# BACKEND - Laravel
+# ============================================
+/backend/vendor/
+/backend/node_modules/
 /backend/public/hot
 /backend/public/storage
-/backend/bootstrap/cache/*.php
+/backend/storage/*.key
+/backend/storage/framework/cache/*
+/backend/storage/framework/sessions/*
+/backend/storage/framework/views/*
+/backend/storage/logs/*
+!/backend/storage/framework/cache/.gitkeep
+!/backend/storage/framework/sessions/.gitkeep
+!/backend/storage/framework/views/.gitkeep
+!/backend/storage/logs/.gitkeep
+/backend/bootstrap/cache/*
+!/backend/bootstrap/cache/.gitkeep
+/backend/.phpunit.result.cache
+/backend/auth.json
+/backend/npm-debug.log
+/backend/yarn-error.log
 
-# FRONTEND WEB (Next.js)
-/web/.next
-/web/out
-/web/node_modules
+# ============================================
+# FRONTEND WEB - React + Vite
+# ============================================
+/web/node_modules/
+/web/dist/
+/web/build/
+/web/.vite/
+/web/.cache/
 /web/npm-debug.log*
+/web/yarn-debug.log*
 /web/yarn-error.log*
+/web/pnpm-debug.log*
+/web/lerna-debug.log*
+/web/.eslintcache
 
-# FRONTEND MOBILE (Expo/RN)
-/mobile/node_modules
-/mobile/.expo
-/mobile/web-build
-/mobile/android/build
-/mobile/ios/build
+# ============================================
+# FRONTEND MOBILE - Expo/React Native
+# ============================================
+/mobile/node_modules/
+/mobile/.expo/
+/mobile/.expo-shared/
+/mobile/dist/
+/mobile/web-build/
+/mobile/android/build/
+/mobile/android/app/build/
+/mobile/ios/build/
+/mobile/ios/Pods/
+/mobile/*.jks
+/mobile/*.p8
+/mobile/*.p12
+/mobile/*.key
+/mobile/*.mobileprovision
+/mobile/*.orig.*
+/mobile/npm-debug.*
+/mobile/yarn-error.log
+
+# ============================================
+# ARCHIVOS DE LOG Y TEMPORALES
+# ============================================
+*.log
+logs/
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# ARCHIVOS DE PRUEBA Y COBERTURA
+# ============================================
+coverage/
+*.cover
+.nyc_output/
+.cache/
+
+# ============================================
+# ARCHIVOS ESPECÍFICOS DEL PROYECTO
+# ============================================
+cookies.txt
+login_data.json
